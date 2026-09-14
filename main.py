@@ -18,7 +18,9 @@ import math
 import subprocess
 from urllib.parse import urlparse, parse_qs
 
-PORT = 8000
+# Render gives the listening port via $PORT.
+# Use that value if present; otherwise default to 8000 for local runs.
+PORT = int(os.getenv("PORT", 8000))
 DIST_DIR = os.path.join(os.path.dirname(__file__), 'dist')
 DATA_FILE = os.path.join(os.path.dirname(__file__), 'data', 'real_mplads.json')
 
