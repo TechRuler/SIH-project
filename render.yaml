@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: semicolon-mplads
+    env: docker
+    plan: starter   # or a higher‑tier plan if you need more RAM/CPU
+    region: oregon  # choose any region you prefer
+    dockerfilePath: Dockerfile
+    # Render sets $PORT automatically; the container will listen on it.
+    # No additional build command is required because the Dockerfile handles it.
+    healthCheckPath: /api/stats   # simple endpoint to verify the service is alive
