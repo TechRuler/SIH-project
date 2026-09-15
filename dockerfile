@@ -44,4 +44,4 @@ ENV PORT=8000
 
 # Start the server using Gunicorn (Best practice for Flask)
 # Alternatively, use CMD ["python", "app.py"] for the built-in development server
-CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "main:app", "--bind", "0.0.0.0:8000"]
