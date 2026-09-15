@@ -1,19 +1,22 @@
 # ----- Build stage (Node) -------------------------------------------------
 FROM node:20-alpine AS react-build
 
-# Set working directory
 WORKDIR /app
 
-# Copy only the files needed to install the frontend deps
+# Copy package files and install
 COPY package*.json ./
-RUN npm ci                     # install exact versions from package-lock.json
+RUN npm ci
 
-# Copy the React source (Include vite.config.js/webpack.config.js if you use them)
+# Copy Vite configuration and root HTML
+COPY index.html ./
+COPY vite.config.js ./ 
+
+# Copy your source code
 COPY src/ ./src/
-COPY public/ ./public/
-# COPY vite.config.js ./     # Uncomment if using Vite
+# If you DO have a public folder, uncomment the next line:
+# COPY public/ ./public/ 
 
-# Build the production bundle into `dist/`
+# Build the production bundle
 RUN npm run build
 
 # ----- Runtime stage (Python) --------------------------------------------
