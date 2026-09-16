@@ -66,8 +66,8 @@ if response.status_code == 200:
             os.makedirs("data", exist_ok=True)
             
             # Save JSON directly into data directory for your ML engine
-            df.to_json("data/real_mplads_data.json", orient="records", indent=4)
-            print("\n[✓] Saved records to data/real_mplads_data.json!")
+            df.to_json("data/allocated_limit.json", orient="records", indent=4)
+            print("\n[OK] Saved records to data/real_mplads_data.json!")
             
         else:
             print("[-] The server response format has changed. Cannot parse the string.")

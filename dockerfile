@@ -13,8 +13,8 @@ COPY vite.config.js ./
 
 # Copy your source code
 COPY src/ ./src/
-# If you DO have a public folder, uncomment the next line:
-# COPY public/ ./public/ 
+
+COPY public/ ./public/ 
 
 # Build the production bundle
 RUN npm run build

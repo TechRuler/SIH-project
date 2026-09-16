@@ -21,7 +21,7 @@ export const HeroSection = () => {
           </p>
 
           <div className="hero-actions">
-            <button 
+            <button
               className="btn-hero-action"
               onClick={() => setShowGuidelinesModal(true)}
             >
@@ -29,7 +29,7 @@ export const HeroSection = () => {
               <span>Official Guidelines</span>
             </button>
 
-            <button 
+            <button
               className="btn-hero-action"
               onClick={() => setShowVideoModal(true)}
             >
@@ -37,7 +37,7 @@ export const HeroSection = () => {
               <span>Explainer Video</span>
             </button>
 
-            <a 
+            <a
               href="https://mplads.mospi.gov.in/digigov/dashboard.html"
               target="_blank"
               rel="noreferrer"
@@ -51,9 +51,9 @@ export const HeroSection = () => {
         </div>
 
         <div className="hero-image-wrapper">
-          <img 
-            src="https://images.unsplash.com/photo-1599837565318-67429bde7162?w=800&auto=format&fit=crop&q=80" 
-            alt="New Parliament Building of India" 
+          <img
+            src="https://images.unsplash.com/photo-1583608563020-9772ff491a8c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwcGFybGltZW50fGVufDB8fDB8fHww"
+            alt="New Parliament Building of India"
             className="hero-image"
           />
           <div className="hero-image-badge">
@@ -68,7 +68,7 @@ export const HeroSection = () => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
               <h3>MPLADS Scheme & AI Intelligence Overview</h3>
-              <button 
+              <button
                 onClick={() => setShowVideoModal(false)}
                 style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748b' }}
               >
@@ -97,7 +97,7 @@ export const HeroSection = () => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-header">
               <h3>Official MPLADS Guidelines Summary (MoSPI)</h3>
-              <button 
+              <button
                 onClick={() => setShowGuidelinesModal(false)}
                 style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#64748b' }}
               >

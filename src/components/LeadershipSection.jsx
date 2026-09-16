@@ -18,9 +18,9 @@ export const LeadershipSection = () => {
         </div>
 
         <div className="quote-card">
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Narendra_Modi_official_portrait_2024.jpg/440px-Narendra_Modi_official_portrait_2024.jpg" 
-            alt="Shri Narendra Modi" 
+          <img
+            src=""
+            alt="Shri Narendra Modi"
             className="leader-photo"
           />
           <div className="quote-content">
@@ -33,9 +33,9 @@ export const LeadershipSection = () => {
         </div>
 
         <div className="quote-card">
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rao_Inderjit_Singh_in_2024.jpg/440px-Rao_Inderjit_Singh_in_2024.jpg" 
-            alt="Shri Rao Inderjit Singh" 
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rao_Inderjit_Singh_in_2024.jpg/440px-Rao_Inderjit_Singh_in_2024.jpg"
+            alt="Shri Rao Inderjit Singh"
             className="leader-photo"
           />
           <div className="quote-content">
